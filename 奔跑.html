@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			background-color:rgb(47, 206, 255);
+		}
+		.main {
+			position: relative;
+			background-color:rgb(47, 206, 255);
+			width: 400px;
+			height: 400px;
+			margin: 50px auto;
+		}
+		.main div {
+			position: absolute;
+		}
+		.head {
+			color:white;
+			left: 224px;
+			top: 110px;
+			bottom: 0;
+			right: 0;
+			width: 50px;
+			height: 50px;
+			border: white 4px solid;
+			border-radius: 50%;
+		}
+		.body {
+			left: 230px;
+			top: 168px;
+			bottom: 0;
+			right: 0;
+			width: 4px;
+			height: 100px;
+			border-left: white 4px solid;
+		}
+		.hand-left {
+			left: 156px;
+			top: 168px;
+			bottom: 0;
+			right: 0;
+			width: 70px;
+			height: 70px;
+			border-top: white 4px solid;
+			border-left: white 4px solid;
+			transform-origin: top right;
+			transform: rotate(-20deg);
+
+			animation: hand-left .1s linear infinite alternate;
+		}
+		@keyframes hand-left {
+			0% {
+				transform: rotate(-20deg);
+			}
+			50% {
+				transform: rotate(-40deg);
+			}
+			100% {
+				transform: rotate(-0deg);
+			}
+		}
+		.hand-right {
+			left: 234px;
+			top: 98px;
+			bottom: 0;
+			right: 0;
+			width: 70px;
+			height: 70px;
+			border-bottom: white 4px solid;
+			border-right: white 4px solid;
+			transform-origin: bottom left;
+			transform: rotate(45deg);
+
+			animation: hand-right .1s linear infinite alternate;
+		}
+
+		@keyframes hand-right {
+			0% {
+				transform: rotate(45deg);
+			}
+			50% {
+				transform: rotate(65deg);
+			}
+			100% {
+				transform: rotate(25deg);
+			}
+		}
+
+		.leg-left {
+			left: 158px;
+			top: 194px;
+			bottom: 0;
+			right: 0;
+			width: 70px;
+			height: 70px;
+			border-bottom: white 4px solid;
+			border-left: white 4px solid;
+			transform-origin: bottom right;
+			transform: rotate(-40deg);
+
+			animation: leg-left .1s linear infinite alternate;
+		}
+
+
+		@keyframes leg-left {
+			0% {
+				transform: rotate(-40deg);
+			}
+			50% {
+				transform: rotate(-60deg);
+			}
+			100% {
+				transform: rotate(-20deg);
+			}
+		}
+
+		.leg-right {
+			left: 230px;
+			top: 264px;
+			bottom: 0;
+			right: 0;
+			width: 70px;
+			height: 70px;
+			border-top: white 4px solid;
+			border-right: white 4px solid;
+			transform-origin: top left;
+			transform: rotate(20deg);
+
+			animation: leg-right .1s linear infinite alternate;
+		}
+
+		@keyframes leg-right {
+			0% {
+				transform: rotate(20deg);
+			}
+			50% {
+				transform: rotate(40deg);
+			}
+			100% {
+				transform: rotate(0deg);
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="head">
+			呵呵
+		</div>
+		<div class="body"></div>
+		<div class="hand-left"></div>
+		<div class="hand-right"></div>
+		<div class="leg-left"></div>
+		<div class="leg-right"></div>
+	</div>
+</body>
+</html>
